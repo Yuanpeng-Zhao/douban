@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="never">
+    <title>豆瓣电影</title>
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" data-toggle="collapse" data-target="#navbar" class="navbar-toggle collapsed">
+                    <span class="sr-only">切换导航</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand">豆瓣</a>
+            </div>
+            <div id="navbar" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">豆瓣</a></li>
+                    <li><a href="#">读书</a></li>
+                    <li><a href="#">电影</a></li>
+                    <li><a href="#">音乐</a></li>
+                    <li><a href="#">同城</a></li>
+                    <li><a href="#">小组</a></li>
+                    <li><a href="#">阅读</a></li>
+                    <li><a href="#">FM</a></li>
+                    <li><a href="#">东西</a></li>
+                    <li><a href="#">大集</a></li>
+                    <li class="dropdown">
+                        <a href="#" data-toggle="dropdown" class="dropdown-toggle">更多<b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">一刻</a></li>
+                            <li><a href="#">豆瓣摄影</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container container-top">
+        <div class="row search-bar">
+            <div class="pull-left nav-logo">
+                <a href="http://movie.douban.com">豆瓣电影</a>
+            </div>
+            <div class="col-lg-5 col-md-6 col-xs-6 pull-left">
+                <div class="input-group search-wrap">
+                        <input type="text" class="form-control" placeholder="电影，电视剧，艺人" id="searchInput">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" id="searchBtn"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container">
+        <div class="nav nav-pills">
+            <li class="presenttation"><a href="#">影视&购票</a></li>
+            <li class="presenttation"><a href="#">选电影</a></li>
+            <li class="presenttation"><a href="#">电视剧</a></li>
+            <li class="presenttation"><a href="#">排行榜</a></li>
+            <li class="presenttation"><a href="#">分类</a></li>
+            <li class="presenttation"><a href="#">影评</a></li>
+            <li class="presenttation"><a href="#">2019年度榜单</a></li>
+            <li class="presenttation"><a href="#">2019观影报告</a></li>
+        </div>
+    </div>
+    <hr>
+    <div class="container" id="searchRes">
+        <div class="row">
+            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12 pull-left popular" id="searchRes">
+                <div class="page-header">
+                    <h5>正在热映</h5>
+                </div>
+                <div id="myCarousel2" class="carousel slide">
+                    <div class="carousel-inner">
+
+
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left glyphicon-small"></span>
+                    </a>
+
+                    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right glyphicon-small"></span>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-12 col-lg-offset-2 col-sm-12 col-xs-12 pull-left blog-sidebar">
+                <div class="sidebar-module sidebar-module-inset">
+                    <h4>简介</h4>
+                    <p>这里是一个豆瓣电影的项目，使用了豆瓣<em>开放api</em>实现了页面的简单展示</p>
+
+                </div>
+                <div class="sidebar-module">
+                    <h4>top电影排行</h4>
+                    <ol class="list-style" id="topTen">
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
